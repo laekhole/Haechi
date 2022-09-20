@@ -9,6 +9,7 @@ public class Practice1 {
 		int x;
 		int y;
 
+		
 		//x값 입력
 		System.out.println("첫 번째 정수를 입력하세요: ");
 		String strX=scanner.nextLine();
