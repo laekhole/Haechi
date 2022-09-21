@@ -1,5 +1,4 @@
 package practice;
-
 public class check1 {
 	public static void main(String[] args) {
 		String[] names = {"홍길동", "일지매", "임꺽정"};
@@ -7,16 +6,15 @@ public class check1 {
 		System.out.println("-------성적표---------");
 		System.out.println("|이름|국어|영어|수학|총점|");
 		System.out.println("---------------------");
-								int[] subject = new int[3];
+															int[] subject = new int[3];
 		for(int i=0;i<scores.length;i++) {
 			int sum=0;
 			System.out.print("|"+names[i]+"|");
 			for(int j=0;j<scores[i].length;j++) {
-								subject[i] += scores[j][i];
+															subject[i] += scores[j][i];
 				sum+=scores[i][j];
 				System.out.print(scores[i][j]+"|");
-		//		System.out.print(sum+"|");
-//				System.out.print("|"+sum+"|");				
+			
 			}
 			System.out.print(sum+"|");
 			System.out.println("");
@@ -24,7 +22,10 @@ public class check1 {
 		System.out.println("-------------------");
 		System.out.print("|총점 |");
 		for(int i=0;i<scores.length;i++)
-								System.out.print(""+subject[i]+"|");
+															System.out.print(""+subject[i]+"|");
+		int sumSubject=0;
+		for(int i=0;i<scores.length;i++) sumSubject+=subject[i];
+		System.out.print(sumSubject+"|");
 	}
 	
 }
