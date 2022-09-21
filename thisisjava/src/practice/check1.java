@@ -3,18 +3,24 @@ package practice;
 public class check1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-/*int x =10;
-int y = 5;
-System.out.println((x>7)&&(y<=5));
-System.out.println((x%3==2)||(y%2!=1));
+String oldStr="홍 길 동";
+System.out.println(oldStr);
+oldStr = null;
+System.out.println(oldStr);
+oldStr = "철 수";
+System.out.println(oldStr);
+oldStr = "영 희";
+System.out.println(oldStr);
 
-int lt= 5;
-int lb=10;
-int h=7;
-double area = (lt+lb)*h/2.0;
-System.out.println(area);*/
-		
-	}
+String testStr="홍, 길, 동";
+String[] arr = testStr.split(",");
+
+System.out.println(testStr);
+testStr ="김, 철, 수";
+System.out.println(testStr);
+testStr ="김, 영, 희";
+System.out.println(testStr);
 
 }
+}
+
