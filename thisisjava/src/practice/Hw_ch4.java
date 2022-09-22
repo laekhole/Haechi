@@ -39,8 +39,6 @@ public class Hw_ch4 { //if문만 쓰지 말고 switch문으로 바꿔보기
 Q1)
 3
 Q2)
-
-
 Q3)
 		public static void main(String[] args) {
 			int i=0;
@@ -54,7 +52,6 @@ Q3)
 			System.out.println("1부터 100까지의 정수 중 3의 배수 총합 : "+j);
 			}
 		}
-
 Q4)
 	public static void main(String[] args) {
 		while(true) {
@@ -69,10 +66,8 @@ Q4)
 		}
 	}
 }
-
 Q5)
 	public static void main(String[] args) {
-
 		int x;
 		int y;
 		for(x=1;x<=10;x++) {
@@ -84,13 +79,11 @@ Q5)
 				}
 			}
 		}
-
 	}
 Q6)
 	Answer1)
 		public static void main(String[] args) {
 			System.out.print("*");
-
 			System.out.print("\n");
 			for(int b=1;b<=2;b++) {
 				System.out.print("*");
@@ -108,7 +101,6 @@ Q6)
 				System.out.print("*");}
 	}
 }
-
 	Answer2)
 		public static void main(String[] args) {
 			int i;
@@ -122,7 +114,6 @@ Q6)
 		}
 		
 	}
-
 	}
 }
 	Answer3)
@@ -135,7 +126,6 @@ Q6)
 		System.out.print("\n");
 		
 	}
-
 //Q7)
  *
 import java.util.Scanner;
@@ -150,7 +140,6 @@ public class Hw_ch4 {
 				System.out.println("---------------------------------");
 				System.out.print("선택> ");
 				String strNum = scanner.nextLine();
-
 				String depositCash;
 				int dC;
 				String withdrawCash;
@@ -170,7 +159,6 @@ public class Hw_ch4 {
 						credit+=wC;}
 					credit-=wC;
 					
-
 				} else if(strNum.equals("3")) {
 					System.out.println("잔고>" + credit);//왜 credit 갱신 안 되는지 체크중
 														//while문이라 if문 해결 후 위 while로 돌아가면 credit=0으로 초기화되었음. 그래서 credit 초기값을 while 위로 뺌.
@@ -179,7 +167,6 @@ public class Hw_ch4 {
 						run = false;
 				}
 			}
-
 			System.out.println("프로그램 종료");
 				
 			}
