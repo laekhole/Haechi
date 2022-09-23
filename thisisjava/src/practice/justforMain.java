@@ -2,7 +2,12 @@ package practice;
 
 class justforMain {
 	public static void main(String[] args) {
-		int[][] array = {
+		int[] array = { 1,5,3,8,2};
+		System.out.println(array.length);
+	}
+}
+		
+		/*		int[][] array = {
 		 		{95,86},
 		 		{83,92,96},
 		 		{78,83,93,87,88}
@@ -23,3 +28,4 @@ class justforMain {
 		System.out.printf("전체 합은 %3.0f\n", sum);
 		System.out.println("평균은 "+ average);
 	}
+}*/

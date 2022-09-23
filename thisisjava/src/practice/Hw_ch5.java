@@ -7,14 +7,16 @@
 package practice;
 import java.util.Scanner;
 public class Hw_ch5 {
+	static int[] stNum; //static 을 씀으로써 글로벌 변수 선언 -> 글로벌 변수는 초기화하지 않더라도 JVM이 초기화 시켜줌.
+
 public static void main(String[] args) {
-	Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in); //로컬 변수지만 new 생성자로 인해 Scanner(System.in)이라는 객체로 초기화가 되고 있는 상태.
 	boolean run=true;
 	int num=0;
 	int score=0;
 	double sum=0;
 	double average=0;
-	int[] stNum=null;
+//	int[] stNum=null; //로컬 변수이므로 null로 초기화를 해주지 않으면 값이 설정이 안 되어 null 입력 해주어야 함
 	int h=0;
 	while(run) {
 		System.out.println("----------------------------------------------");
@@ -40,6 +42,9 @@ public static void main(String[] args) {
 				for(int i=0;i<num;i++) {
 				System.out.println("scores["+"i"+"]: "+stNum[i]);
 				}
+//				for(int i=0;i<num;i++) {							//stNum[] stNum어레이의 모습 
+//				System.out.println("stNum 배열"+stNum[i]);			// stNum[i]={score[1], score[2], score[3]...score[i-1], score[i]};
+//				System.out.println("stNum 배열의 길이 :"+stNum.length);}
 				break;
 			case 4:
 				{for(int j=0;j<stNum.length-1;j++)

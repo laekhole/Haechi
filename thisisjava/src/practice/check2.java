@@ -22,7 +22,7 @@ public class check2 {
 		System.out.println(a+"|"+b+"|"+c);		
 		
 			for(int i=0;i<names.length;i++) {
-			int sum=0;
+			int sum=0; 
 			System.out.print("|"+names[i]+"|");
 			for(int j=0;j<scores[i].length;j++) {
 												subject[j] += scores[i][j];
