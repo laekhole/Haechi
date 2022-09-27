@@ -7,17 +7,17 @@ public class Member {
 	private String phone;
 	private String email;
 	
-	//default 생성자
+	//default생성자
 	public Member() {}
-	
-	public Member(int sno, String name, String address, String phone, int flag) {
+
+	public Member(int sno, String name, String address, String phone,int flag) {
 		this.sno = sno;
 		this.name = name;
 		this.address = address;
 		if(flag==1)
-			this.phone= phone;
-		else
 		this.phone = phone;
+		else
+		this.email = email;	
 	}
 
 	public Member(int sno, String name, String address) {
@@ -25,8 +25,7 @@ public class Member {
 		this.name = name;
 		this.address = address;
 	}
-
-
+	
 
 	public int getSno() {
 		return sno;
@@ -34,36 +33,24 @@ public class Member {
 	public void setSno(int sno) {
 		this.sno = sno;
 	}
-	
-	
-	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-	
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-	
 	public String getPhone() {
 		return phone;
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
-	
-	
 	public String getEmail() {
 		return email;
 	}
@@ -73,9 +60,14 @@ public class Member {
 
 	@Override
 	public String toString() {
-		return "Member [sno=" + sno + ", name=" + name + ", address=" + address + ", phone=" + phone + ", email="
-				+ email + "]";
+		return "Member [sno=" + sno + ", name=" + name + ", address=" + address + ", email=" + email + "]";
 	}
+
+
+
 	
 	
+	
+	
+
 }

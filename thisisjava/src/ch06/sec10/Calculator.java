@@ -1,11 +1,8 @@
 package ch06.sec10;
 
 public class Calculator {
-	static double pi=3.141592;
-	static int plus(int x, int y) {
-		return x+y;
-	}
-	static int minus(int x, int y) {
-		return x-y;
-	}
+  //non-static멤버들
+  double pi=3.141592;
+  int plus(int x, int y) {return x+y;}
+  int minus(int x, int y) {return x-y;}
 }
